@@ -4,7 +4,7 @@ This project identifies fraudulent credit card transactions using classification
 
 
 **📂 Project Structure**
-Task 2 - Credit Card Fraud Detection/
+Task 2 - Credit Card Fraud Detection/    
 │── dataset/    
 │── models/    
 │── notebook/    
