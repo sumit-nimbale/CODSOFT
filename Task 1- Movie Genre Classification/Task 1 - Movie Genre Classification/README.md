@@ -6,10 +6,10 @@ This project predicts the genre of a movie based on its textual description. The
 **📂 Project Structure**
 Task 1 - Movie Genre Classification/
 
-│── dataset/
-│── models/
-│── notebook/
-│── results/
+│── dataset/    
+│── models/    
+│── notebook/    
+│── results/    
 └── README.md
 
 
