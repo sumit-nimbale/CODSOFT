@@ -1,6 +1,0 @@
-Model: Multinomial Naive Bayes
-Vectorizer: TF-IDF
-
-Accuracy Score : 0.5207
-F1 Score       : 0.4411
-
