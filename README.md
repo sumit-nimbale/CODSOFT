@@ -15,14 +15,14 @@ All projects are implemented using **Python** and **scikit-learn**.
 
 CODSOFT/
 │
-├── Task 1 - Movie Genre Classification/
-│ ├── data/
-│ ├── notebooks/
-│ ├── src/
-│ ├── models/
-│ └── README.md
+├── Task 1 - Movie Genre Classification/    
+│ ├── data/    
+│ ├── notebooks/    
+│ ├── src/     
+│ ├── models/    
+│ └── README.md    
 │
-└── README.md
+└── README.md    
 Each task is organized independently with its own dataset, source code, and documentation.
 
 ## 🎯 Task 1: Movie Genre Classification
