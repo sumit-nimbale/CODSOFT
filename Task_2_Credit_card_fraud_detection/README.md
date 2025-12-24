@@ -3,10 +3,9 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Logistic Regression](https://img.shields.io/badge/Logistic%20Regression-Classification-blue)
 ![Random Forest](https://img.shields.io/badge/Random%20Forest-Ensemble-green)
-
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
