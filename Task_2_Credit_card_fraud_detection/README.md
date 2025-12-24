@@ -6,6 +6,8 @@
 ![Logistic Regression](https://img.shields.io/badge/Logistic%20Regression-Classification-blue)
 ![Random Forest](https://img.shields.io/badge/Random%20Forest-Ensemble-green)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Internship](https://img.shields.io/badge/Internship-CodSoft-lightgrey)
 
 ---
 
