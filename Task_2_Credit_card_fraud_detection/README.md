@@ -1,179 +1,114 @@
-🚨 Credit Card Fraud Detection using Machine Learning
+# 💳 Credit Card Fraud Detection using Machine Learning
 
-End-to-end ML project to detect fraudulent credit card transactions on highly imbalanced data, with threshold optimization to maximize fraud recall.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-📌 Project Overview
+---
 
-Credit card fraud detection is a real-world imbalanced classification problem, where fraudulent transactions account for <1% of all data.
-Traditional accuracy-based evaluation fails in such scenarios.
+## 🚀 Project Overview
 
-This project builds industry-ready ML pipelines to:
+This project focuses on **detecting fraudulent credit card transactions** using machine learning techniques on **highly imbalanced data**.  
+Special emphasis is placed on **Recall maximization**, **threshold tuning**, and **robust evaluation metrics**.
 
-Handle extreme class imbalance
+---
 
-Compare Logistic Regression vs Random Forest
+## 🎯 Objective
 
-Evaluate using Precision, Recall, F1, ROC-AUC, PR-AUC
+- Detect fraudulent transactions (minority class)
+- Handle extreme class imbalance
+- Optimize decision thresholds to **maximize Recall**
+- Compare models using multiple evaluation metrics
 
-Tune decision thresholds to maximize fraud detection (Recall)
+---
 
-Follow production-style modular code structure
+## 🧠 Models Implemented
 
-🎯 Objective
+| Model | Description |
+|-----|------------|
+| Logistic Regression | Baseline linear model with class weighting |
+| Random Forest | Ensemble model capturing non-linear patterns |
 
-Detect fraudulent credit card transactions while maximizing recall, ensuring fewer fraudulent transactions go undetected.
+---
 
-🧠 Key ML Concepts Applied
+## ⚖️ Class Imbalance
 
-Imbalanced classification handling
+- Fraud transactions: **~0.17%**
+- Legitimate transactions: **~99.83%**
 
-Class-weighted learning
+📉 Highly skewed dataset → Accuracy alone is misleading.
 
-Feature engineering from timestamps
+**Visualization:**
+![Class Distribution]([https://1drv.ms/i/c/2b632cc6ee235ec7/IQBmgNTQqPoMQbXZ10vfuXjwAYlh2lxFV6xxrTrjRPDpp-M?e=OBUAfG])
 
-High-cardinality categorical feature reduction
+---
 
-Pipeline-based preprocessing
+## 🔧 Feature Engineering
 
-Threshold tuning beyond default 0.5
+- Transaction hour
+- Transaction day
+- Transaction month
+- Customer age
+- Categorical encoding (One-Hot)
+- Numerical scaling (StandardScaler)
 
-ROC-AUC & Precision-Recall analysis
+---
 
-📂 Project Structure
-credit-card-fraud-detection/
-│
-├── src/
-│   ├── data_preprocessing.py      # Data loading, cleaning, splitting
-│   ├── feature_engineering.py     # Time & age feature creation
-│   ├── train_logistic_regression.py
-│   ├── train_random_forest.py
-│   ├── threshold_tuning.py        # Decision threshold optimization
-│   ├── evaluation.py              # Metrics & reports
-│   └── utils.py                   # Common utilities & plots
-│
-├── notebooks/
-│   └── EDA.ipynb                  # Exploratory analysis
-│
-├── data/
-│   └── fraud_train.csv
-│
-├── requirements.txt
-└── README.md
+## 📊 Evaluation Metrics Used
 
-📊 Dataset
+- Precision
+- Recall (primary focus)
+- F1-Score
+- ROC-AUC
+- PR-AUC
 
-Source: Kaggle Credit Card Fraud Dataset
+---
 
-Target Variable: is_fraud
+## 🧪 Logistic Regression Results
 
-Class Distribution:
+### Confusion Matrix
+![LR Confusion Matrix](reports/figures/logistic_regression_confusion_matrix.png)
 
-Legitimate: ~99.8%
+### Precision-Recall Curve
+![PR Curve](reports/figures/precision_recall_curve.png)
 
-Fraudulent: ~0.2%
+---
 
-⚙️ Feature Engineering
+## 🌲 Random Forest Results
 
-Transaction hour
+### Confusion Matrix
+![RF Confusion Matrix](reports/figures/random_forest_cm.png)
 
-Transaction day
+---
 
-Transaction month
+## 🎯 Threshold Optimization
 
-Customer age (derived from DOB)
+Instead of using the default **0.5 threshold**, we tuned thresholds to **maximize Recall**.
 
-High-cardinality category reduction
+### Threshold Tuning Visualization
+![Threshold Tuning](reports/figures/thresholding_tuning.png)
 
-Scaled numerical features
+### Optimized Thresholds
+| Model | Optimal Threshold |
+|-----|------------------|
+| Logistic Regression | Optimized |
+| Random Forest | Optimized |
 
-One-Hot encoded categorical features
+---
 
-🤖 Models Implemented
-1️⃣ Logistic Regression
+## 🏆 Final Model Comparison
 
-Class-weighted (class_weight='balanced')
+| Model | Precision | Recall | F1 | ROC-AUC |
+|-----|---------|-------|----|--------|
+| Logistic Regression (Optimized) | High | Improved | Balanced | Strong |
+| Random Forest (Optimized) | Moderate | **Highest Recall** | Strong | Best |
 
-Strong baseline for imbalanced data
+📌 **Final Recommendation:**  
+➡️ **Random Forest with optimized threshold** for fraud detection.
 
-Interpretable decision boundary
+---
 
-2️⃣ Random Forest Classifier
+## 📁 Repository Structure
 
-Ensemble learning
-
-Handles non-linear patterns
-
-Robust to feature interactions
-
-📈 Evaluation Metrics
-
-Accuracy is not reliable for imbalanced data.
-This project focuses on:
-
-Precision
-
-Recall (Primary Metric)
-
-F1 Score
-
-ROC-AUC
-
-PR-AUC
-
-Confusion Matrix
-
-🎯 Threshold Optimization (Core Highlight)
-
-Instead of using the default threshold 0.5, multiple thresholds were evaluated:
-
-Threshold range: 0.05 → 0.9
-
-Selected threshold that maximizes Recall
-
-Compared performance before & after optimization
-
-📌 This reflects real industry fraud systems, where missing fraud is costlier than false alarms.
-
-🏆 Final Results Summary
-Model	Threshold	Precision	Recall	F1	ROC-AUC
-Logistic Regression (Default)	0.50	✓	✓	✓	✓
-Logistic Regression (Optimized)	Tuned	↑	↑↑	↑	✓
-Random Forest (Default)	0.50	✓	✓	✓	✓
-Random Forest (Optimized)	Tuned	↑	↑↑	↑	✓
-
-➡ Optimized models significantly improved fraud recall
-
-📌 Final Recommendation
-
-Model selected based on maximum Recall after threshold tuning, making it suitable for real-world fraud detection systems where minimizing false negatives is critical.
-
-🚀 How to Run
-pip install -r requirements.txt
-python main.py
-
-
-(or run individual scripts from src/)
-
-🧩 Skills Demonstrated
-
-Machine Learning
-
-Imbalanced Data Handling
-
-Feature Engineering
-
-Model Evaluation
-
-Threshold Optimization
-
-Scikit-Learn Pipelines
-
-Production-style ML code organization
-
-📣 Why This Project Matters
-
-✅ Industry-aligned
-✅ Interview-ready
-✅ Recruiter-friendly
-✅ Real-world ML logic
-✅ Beyond “accuracy” mindset
