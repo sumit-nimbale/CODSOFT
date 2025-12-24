@@ -83,14 +83,14 @@ Metrics are chosen based on the **problem characteristics**, especially for imba
 
 ## Repository Structure
 
-CODSOFT/
-│
-├── Task 1 - Movie Genre Classification/
-│
-├── Task_2_Credit_card_fraud_detection/
-│
-├── README.md
-
+CODSOFT/     
+│     
+├── Task 1 - Movie Genre Classification/     
+│     
+├── Task_2_Credit_card_fraud_detection/     
+│      
+├── README.md      
+      
 
 Each task folder contains its **own README** explaining:
 - Problem statement
