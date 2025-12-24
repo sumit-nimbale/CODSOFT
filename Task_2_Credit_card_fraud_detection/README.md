@@ -41,7 +41,7 @@ Special emphasis is placed on **Recall maximization**, **threshold tuning**, and
 📉 Highly skewed dataset → Accuracy alone is misleading.
 
 **Visualization:**
-![Class Distribution]([https://1drv.ms/i/c/2b632cc6ee235ec7/IQBmgNTQqPoMQbXZ10vfuXjwAYlh2lxFV6xxrTrjRPDpp-M?e=OBUAfG])
+![Class Distribution](class_distribution.png)
 
 ---
 
