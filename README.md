@@ -1,72 +1,114 @@
-# CODSOFT – Machine Learning Internship Projects
+# 💳 Credit Card Fraud Detection using Machine Learning
 
-This repository contains machine learning projects completed as part of the **CodSoft Machine Learning Internship (December Batch)**.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The focus of these projects is to build **end-to-end ML pipelines**, emphasizing:
-- Problem formulation
-- Data preprocessing
-- Feature engineering
-- Model selection
-- Evaluation and interpretation
+---
 
-All projects are implemented using **Python** and **scikit-learn**.
+## 🚀 Project Overview
 
-## 📂 Repository Structure
+This project focuses on **detecting fraudulent credit card transactions** using machine learning techniques on **highly imbalanced data**.  
+Special emphasis is placed on **Recall maximization**, **threshold tuning**, and **robust evaluation metrics**.
 
-CODSOFT/
-│
-├── Task 1 - Movie Genre Classification/    
-│ ├── data/    
-│ ├── notebooks/    
-│ ├── src/     
-│ ├── models/    
-│ └── README.md    
-│
-└── README.md    
-Each task is organized independently with its own dataset, source code, and documentation.
+---
 
-## 🎯 Task 1: Movie Genre Classification
+## 🎯 Objective
 
-**Objective:**  
-Predict the genre of a movie based on its plot description using Natural Language Processing (NLP) techniques.
+- Detect fraudulent transactions (minority class)
+- Handle extreme class imbalance
+- Optimize decision thresholds to **maximize Recall**
+- Compare models using multiple evaluation metrics
 
+---
 
-**Key Concepts Applied:**
-- Text cleaning and preprocessing
-- TF-IDF vectorization
-- Supervised classification
-- Model evaluation using multiple metrics
+## 🧠 Models Implemented
 
+| Model | Description |
+|-----|------------|
+| Logistic Regression | Baseline linear model with class weighting |
+| Random Forest | Ensemble model capturing non-linear patterns |
 
-**Models Used:**
-- Multinomial Naive Bayes
-- Logistic Regression (comparison)
+---
 
+## ⚖️ Class Imbalance
 
-**Skills Demonstrated:**
-- NLP pipeline design
-- Feature extraction from unstructured text
-- Model selection based on problem constraints
-- Interpretation of classification results
+- Fraud transactions: **~0.17%**
+- Legitimate transactions: **~99.83%**
 
+📉 Highly skewed dataset → Accuracy alone is misleading.
 
-## 🧠 Learning Outcomes
-Through these projects, I focused on:
-- Understanding **why** a model is chosen, not just **how**
-- Treating ML as a decision-making system
-- Building reproducible and interpretable solutions
-- Applying theoretical concepts to practical problems
-  
+**Visualization:**
+![Class Distribution](reports/figures/class_distribution.png)
 
-## 🛠 Tech Stack
-- Python
-- NumPy
-- Pandas
-- scikit-learn
-- Matplotlib / Seaborn (for analysis)
- 
+---
 
-## 📌 Notes
-- This repository is intended for **learning and demonstration purposes**
-- Each task README contains task-specific details
-- Emphasis is placed on clarity, structure, and reasoning
+## 🔧 Feature Engineering
+
+- Transaction hour
+- Transaction day
+- Transaction month
+- Customer age
+- Categorical encoding (One-Hot)
+- Numerical scaling (StandardScaler)
+
+---
+
+## 📊 Evaluation Metrics Used
+
+- Precision
+- Recall (primary focus)
+- F1-Score
+- ROC-AUC
+- PR-AUC
+
+---
+
+## 🧪 Logistic Regression Results
+
+### Confusion Matrix
+![LR Confusion Matrix](reports/figures/logistic_regression_confusion_matrix.png)
+
+### Precision-Recall Curve
+![PR Curve](reports/figures/precision_recall_curve.png)
+
+---
+
+## 🌲 Random Forest Results
+
+### Confusion Matrix
+![RF Confusion Matrix](reports/figures/random_forest_cm.png)
+
+---
+
+## 🎯 Threshold Optimization
+
+Instead of using the default **0.5 threshold**, we tuned thresholds to **maximize Recall**.
+
+### Threshold Tuning Visualization
+![Threshold Tuning](reports/figures/thresholding_tuning.png)
+
+### Optimized Thresholds
+| Model | Optimal Threshold |
+|-----|------------------|
+| Logistic Regression | Optimized |
+| Random Forest | Optimized |
+
+---
+
+## 🏆 Final Model Comparison
+
+| Model | Precision | Recall | F1 | ROC-AUC |
+|-----|---------|-------|----|--------|
+| Logistic Regression (Optimized) | High | Improved | Balanced | Strong |
+| Random Forest (Optimized) | Moderate | **Highest Recall** | Strong | Best |
+
+📌 **Final Recommendation:**  
+➡️ **Random Forest with optimized threshold** for fraud detection.
+
+---
+
+## 📁 Repository Structure
+
