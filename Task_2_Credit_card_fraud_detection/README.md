@@ -5,10 +5,9 @@
 ![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced-red)
 ![Logistic Regression](https://img.shields.io/badge/Logistic%20Regression-Classification-blue)
 ![Random Forest](https://img.shields.io/badge/Random%20Forest-Ensemble-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Model Evaluation](https://img.shields.io/badge/Evaluation-Precision--Recall-yellow)
 ![Internship](https://img.shields.io/badge/Internship-CodSoft-lightgrey)
-
+![Status](https://img.shields.io/badge/Status-Model%20Development-yellow)
 ---
 
 ## 🚀 Project Overview
