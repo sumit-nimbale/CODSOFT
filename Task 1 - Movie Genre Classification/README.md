@@ -31,7 +31,7 @@ This is a **text classification** problem where the input is unstructured text a
   * `text` → Movie description / plot
   * `label` → Movie genre
 
-**Dataset Source:** (external link provided in repository)
+**Dataset Source:** ([https://www.kaggle.com/datasets/hijest/genre-classification-dataset-imdb])
 
 ---
 
