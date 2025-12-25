@@ -1,118 +1,123 @@
-# 💳 Credit Card Fraud Detection using Machine Learning
+# Movie Genre Classification (Task 1)
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
-![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced-red)
-![Logistic Regression](https://img.shields.io/badge/Logistic%20Regression-Classification-blue)
-![Random Forest](https://img.shields.io/badge/Random%20Forest-Ensemble-green)
-![Model Evaluation](https://img.shields.io/badge/Evaluation-Precision--Recall-yellow)
-![Internship](https://img.shields.io/badge/Internship-CodSoft-lightgrey)
-![Status](https://img.shields.io/badge/Status-Model%20Development-yellow)
----
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Classification-green)
+![NLP](https://img.shields.io/badge/NLP-Text%20Classification-orange)
+![TF--IDF](https://img.shields.io/badge/Feature%20Extraction-TF--IDF-yellow)
+![Naive Bayes](https://img.shields.io/badge/Algorithm-Multinomial%20Naive%20Bayes-red)
+![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-lightgrey)
 
-## 🚀 Project Overview
+## 🎬 Project Overview
 
-This project focuses on **detecting fraudulent credit card transactions** using machine learning techniques on **highly imbalanced data**.  
-Special emphasis is placed on **Recall maximization**, **threshold tuning**, and **robust evaluation metrics**.
+![Application Interface](./assets/app_interface.png)
+
+This project builds a **machine learning model** to predict the **genre of a movie** based solely on its **text description/plot**. The objective is to demonstrate how **Natural Language Processing (NLP)** techniques can convert raw text into numerical features and use them for supervised classification.
 
 ---
 
-## 🎯 Objective
+## ❓ Problem Statement
 
-- Detect fraudulent transactions (minority class)
-- Handle extreme class imbalance
-- Optimize decision thresholds to **maximize Recall**
-- Compare models using multiple evaluation metrics
+Given a movie plot as input text, automatically classify it into the most appropriate **movie genre**.
 
----
-
-## 🧠 Models Implemented
-
-| Model | Description |
-|-----|------------|
-| Logistic Regression | Baseline linear model with class weighting |
-| Random Forest | Ensemble model capturing non-linear patterns |
+This is a **text classification** problem where the input is unstructured text and the output is a categorical label.
 
 ---
 
-## ⚖️ Class Imbalance
+## 📊 Dataset
 
-- Fraud transactions: **~0.17%**
-- Legitimate transactions: **~99.83%**
+* The dataset consists of **movie plot summaries** and their corresponding **genres**.
+* Each sample contains:
 
-📉 Highly skewed dataset → Accuracy alone is misleading.
+  * `text` → Movie description / plot
+  * `label` → Movie genre
 
-**Visualization:**
-## Class Distribution
-![Class Distribution](reports/figures/class_distribution.png)
-
+**Dataset Source:** (external link provided in repository)
 
 ---
 
-## 🔧 Feature Engineering
+## 🧠 Approach & Methodology
 
-- Transaction hour
-- Transaction day
-- Transaction month
-- Customer age
-- Categorical encoding (One-Hot)
-- Numerical scaling (StandardScaler)
+The project follows a standard NLP-based machine learning pipeline:
 
----
+1. **Text Preprocessing**
 
-## 📊 Evaluation Metrics Used
+   * Lowercasing text
+   * Removing punctuation and special characters
+   * Cleaning unnecessary symbols
 
-- Precision
-- Recall (primary focus)
-- F1-Score
-- ROC-AUC
-- PR-AUC
+2. **Feature Extraction**
 
----
+   * **TF-IDF Vectorization** is used to convert text into numerical feature vectors.
+   * This captures the importance of words relative to the dataset.
 
-## 🧪 Logistic Regression Results
+3. **Model Selection**
 
-### Confusion Matrix
-![LR Confusion Matrix](reports/figures/logistic_regression_confusion_matrix.png)
+   * **Multinomial Naive Bayes** is used for classification.
+   * Chosen due to its effectiveness and efficiency for text-based problems.
 
-### Precision-Recall Curve
-![PR Curve](reports/figures/precision_recall_curve.png)
+4. **Model Training & Evaluation**
 
----
+   * Data is split into training and testing sets.
+   * Model performance is evaluated using:
 
-## 🌲 Random Forest Results
-
-### Confusion Matrix
-![RF Confusion Matrix](reports/figures/random_forest_cm.png)
+     * Accuracy
+     * F1-score
 
 ---
 
-## 🎯 Threshold Optimization
+## ⚙️ Algorithms Used
 
-Instead of using the default **0.5 threshold**, we tuned thresholds to **maximize Recall**.
-
-### Threshold Tuning Visualization
-![Threshold Tuning](reports/figures/thresholding_tuning.png)
-
-### Optimized Thresholds
-| Model | Optimal Threshold |
-|-----|------------------|
-| Logistic Regression | Optimized |
-| Random Forest | Optimized |
+* **TF-IDF (Term Frequency–Inverse Document Frequency)** – Feature extraction
+* **Multinomial Naive Bayes** – Classification algorithm
 
 ---
 
-## 🏆 Final Model Comparison
+## 🗂️ Project Structure
 
-| Model | Precision | Recall | F1 | ROC-AUC |
-|-----|---------|-------|----|--------|
-| Logistic Regression (Optimized) | High | Improved | Balanced | Strong |
-| Random Forest (Optimized) | Moderate | **Highest Recall** | Strong | Best |
-
-📌 **Final Recommendation:**  
-➡️ **Random Forest with optimized threshold** for fraud detection.
+```
+Task 1 - Movie Genre Classification/
+│
+├── data/
+│   ├── raw/          # Original dataset
+│   └── processed/    # Cleaned and transformed data
+│
+├── model/
+│   └── genre_model.pkl   # Trained model
+│
+├── notebooks/        # Exploration and training notebooks
+├── app.py            # Model inference interface
+├── requirements.txt  # Dependencies
+└── README.md         # Project documentation
+```
 
 ---
 
-## 📁 Repository Structure
+## 📤 Output
 
+* The trained model predicts the **most probable movie genre** for a given input description.
+* The output is a single genre label based on learned patterns from the dataset.
+
+---
+
+## 📘 Key Learnings
+
+* Practical implementation of **text preprocessing**
+* Understanding and applying **TF-IDF** for NLP tasks
+* Using **Naive Bayes** for multi-class text classification
+* Structuring an end-to-end machine learning project
+
+---
+
+## 💡 Use Case
+
+This model can be used for:
+
+* Automatic tagging of movies by genre
+* Content recommendation systems
+* NLP-based classification demonstrations
+
+---
+
+## ✅ Status
+
+✅ Task 1 completed successfully
