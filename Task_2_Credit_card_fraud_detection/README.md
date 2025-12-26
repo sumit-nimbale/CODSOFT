@@ -20,8 +20,8 @@ The focus is on **handling highly imbalanced data** and using **appropriate eval
 ## Problem Statement
 Fraud detection is a **binary classification problem**:
 - `0` → Legitimate transaction  
-- `1` → Fraudulent transaction  
-
+- `1` → Fraudulent transaction
+  
 The dataset is **severely imbalanced**, making standard accuracy an unreliable performance measure.
 
 ---
@@ -31,7 +31,10 @@ The dataset is **severely imbalanced**, making standard accuracy an unreliable p
 - Numerical features derived from transaction behavior  
 - Fraudulent transactions represent a very small percentage of total samples  
 
-> Raw data is not included due to size and privacy constraints.
+**Dataset source:**  
+https://www.kaggle.com/datasets/kartik2112/fraud-detection
+
+> Raw data is not included due to size constraints.
 
 ---
 
