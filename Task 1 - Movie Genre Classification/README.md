@@ -7,7 +7,7 @@
 ![Naive Bayes](https://img.shields.io/badge/Algorithm-Multinomial%20Naive%20Bayes-red)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-lightgrey)
 
-## Project Overview
+## 🎬 Project Overview
 
 ![Application Interface](./assets/app_interface.png)
 
@@ -15,7 +15,7 @@ This project builds a **machine learning model** to predict the **genre of a mov
 
 ---
 
-## Problem Statement
+## ❓ Problem Statement
 
 Given a movie plot as input text, automatically classify it into the most appropriate **movie genre**.
 
@@ -23,7 +23,7 @@ This is a **text classification** problem where the input is unstructured text a
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 * The dataset consists of **movie plot summaries** and their corresponding **genres**.
 * Each sample contains:
@@ -31,11 +31,11 @@ This is a **text classification** problem where the input is unstructured text a
   * `text` → Movie description / plot
   * `label` → Movie genre
 
-**Dataset Source:** ([https://www.kaggle.com/datasets/hijest/genre-classification-dataset-imdb])
+**Dataset Source:** (external link provided in repository)
 
 ---
 
-## Approach & Methodology
+## 🧠 Approach & Methodology
 
 The project follows a standard NLP-based machine learning pipeline:
 
@@ -65,14 +65,14 @@ The project follows a standard NLP-based machine learning pipeline:
 
 ---
 
-## Algorithms Used
+## ⚙️ Algorithms Used
 
 * **TF-IDF (Term Frequency–Inverse Document Frequency)** – Feature extraction
 * **Multinomial Naive Bayes** – Classification algorithm
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 Task 1 - Movie Genre Classification/
@@ -92,14 +92,14 @@ Task 1 - Movie Genre Classification/
 
 ---
 
-## Output
+## 📤 Output
 
 * The trained model predicts the **most probable movie genre** for a given input description.
 * The output is a single genre label based on learned patterns from the dataset.
 
 ---
 
-## Key Learnings
+## 📘 Key Learnings
 
 * Practical implementation of **text preprocessing**
 * Understanding and applying **TF-IDF** for NLP tasks
@@ -108,7 +108,7 @@ Task 1 - Movie Genre Classification/
 
 ---
 
-## Use Case
+## 💡 Use Case
 
 This model can be used for:
 
@@ -118,6 +118,6 @@ This model can be used for:
 
 ---
 
-## Status
+## ✅ Status
 
 ✅ Task 1 completed successfully
