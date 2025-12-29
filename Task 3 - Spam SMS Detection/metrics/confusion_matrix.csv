@@ -1,0 +1,16 @@
+import pandas as pd
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(y_test, y_pred)
+
+cm_df = pd.DataFrame(
+    cm,
+    index=["Actual_Ham", "Actual_Spam"],
+    columns=["Predicted_Ham", "Predicted_Spam"]
+)
+
+cm_df.to_csv("metrics/confusion_matrix.csv")
+
+  Actual\Predicted,Predicted_Ham,Predicted_Spam
+Actual_Ham,955,10
+Actual_Spam,12,138
