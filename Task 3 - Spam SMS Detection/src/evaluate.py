@@ -1,25 +1,44 @@
 import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.metrics import (
-    confusion_matrix,
-    classification_report,
-    roc_curve,
-    auc,
-    precision_recall_curve
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    confusion_matrix
 )
 
 def evaluate_model(model, X_test, y_test):
+    """
+    Evaluate model performance.
+    """
     y_pred = model.predict(X_test)
-    print(confusion_matrix(y_test, y_pred))
-    print(classification_report(y_test, y_pred))
 
-def plot_roc_pr(y_test, y_probs):
-    fpr, tpr, _ = roc_curve(y_test, y_probs)
-    roc_auc = auc(fpr, tpr)
+    print("Accuracy :", accuracy_score(y_test, y_pred))
+    print("Precision:", precision_score(y_test, y_pred))
+    print("Recall   :", recall_score(y_test, y_pred))
+    print("F1 Score :", f1_score(y_test, y_pred))
 
-    plt.plot(fpr, tpr, label=f"AUC={roc_auc:.3f}")
-    plt.legend()
-    plt.show()
+    return y_pred
 
-    precision, recall, _ = precision_recall_curve(y_test, y_probs)
-    plt.plot(recall, precision)
+
+def plot_confusion_matrix(y_test, y_pred):
+    """
+    Plot confusion matrix.
+    """
+    cm = confusion_matrix(y_test, y_pred)
+
+    plt.figure(figsize=(5, 4))
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Blues",
+        xticklabels=["Ham", "Spam"],
+        yticklabels=["Ham", "Spam"]
+    )
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
+    plt.title("Confusion Matrix - SVM")
+    plt.tight_layout()
     plt.show()
