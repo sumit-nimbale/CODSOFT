@@ -1,8 +1,18 @@
 # SMS Spam Detection using Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
+![NLP](https://img.shields.io/badge/NLP-Text%20Classification-purple)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Supervised-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Pipelines-yellow)
+![TF--IDF](https://img.shields.io/badge/Feature%20Engineering-TF--IDF-brightgreen)
+![GridSearchCV](https://img.shields.io/badge/Model%20Selection-GridSearchCV-red)
+![Model Evaluation](https://img.shields.io/badge/Evaluation-F1%20%7C%20Precision%20%7C%20Recall-blueviolet)
+![Imbalanced Data](https://img.shields.io/badge/Data-Imbalanced%20Classification-critical)
+![SVM](https://img.shields.io/badge/Classifier-SVM-lightgrey)
+![Logistic Regression](https://img.shields.io/badge/Classifier-Logistic%20Regression-lightgrey)
+![Naive Bayes](https://img.shields.io/badge/Classifier-Naive%20Bayes-lightgrey)
+
 
 A machine learning–based system for classifying SMS messages as **Spam** or **Ham**, built using classical NLP techniques and a structured, production-oriented workflow.
 
