@@ -1,18 +1,12 @@
 import re
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
-
-nltk.download("stopwords")
-nltk.download("punkt")
-
-stop_words = set(stopwords.words("english"))
-ps = PorterStemmer()
+import string
 
 def clean_text(text: str) -> str:
+    """
+    Clean raw SMS text.
+    """
     text = text.lower()
-    text = re.sub(r"[^a-z\s]", "", text)
-    tokens = word_tokenize(text)
-    tokens = [ps.stem(w) for w in tokens if w not in stop_words]
-    return " ".join(tokens)
+    text = re.sub(r"\d+", "", text)
+    text = text.translate(str.maketrans("", "", string.punctuation))
+    text = text.strip()
+    return text
