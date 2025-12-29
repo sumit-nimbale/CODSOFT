@@ -1,0 +1,24 @@
+from sklearn.metrics import classification_report
+
+report = classification_report(
+    y_test,
+    y_pred,
+    target_names=["Ham (0)", "Spam (1)"]
+)
+
+with open("metrics/classification_report.txt", "w") as f:
+    f.write("Model: Linear SVM (TF-IDF)\n")
+    f.write("Evaluation Split: Test\n\n")
+    f.write(report)
+
+Model: Linear SVM (TF-IDF)
+Evaluation Split: Test
+
+              precision    recall  f1-score   support
+
+Ham (0)          0.99       0.99      0.99       965
+Spam (1)         0.98       0.89      0.93       150
+
+accuracy                              0.98      1115
+macro avg         0.98       0.94      0.96      1115
+weighted avg      0.98       0.98      0.98      1115
