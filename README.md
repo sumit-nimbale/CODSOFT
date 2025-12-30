@@ -10,18 +10,19 @@ Repository Overview
 -Handling of imbalanced datasets
 -Clean, reproducible project structure
 ===========================================================================================
-Tasks Included
+
+**Tasks Included
 Task 1 — Movie Genre Classification
 -Text classification using movie descriptions
 -Feature extraction with TF-IDF
 -Multi-class model evaluation
--Folder: Task 1 - Movie Genre Classification/
+-Folder: Task 1 - Movie Genre Classification/            
 
 Task 2 — Credit Card Fraud Detection
 -Binary classification on highly imbalanced data
 -Focus on precision, recall, and false negatives
 -Evaluation beyond accuracy
--Folder: Task_2_Credit_card_fraud_detection/
+-Folder: Task_2_Credit_card_fraud_detection**/                         
 
 Task 3 — SMS Spam Detection
 -Binary text classification
