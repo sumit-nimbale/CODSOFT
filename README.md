@@ -1,141 +1,63 @@
-CodSoft Machine Learning Internship Projects (Python, scikit-learn, NLP)
-This repository contains three end-to-end Machine Learning projects completed as part of the CodSoft Machine Learning Internship (December Batch).
-The projects focus on classical machine learning, NLP-based classification, imbalanced data handling, and correct evaluation metrics using Python and scikit-learn.
-This repository is intended for learning, experimentation, and ML fundamentals, not production deployment.
+CodSoft Machine Learning Internship Projects
+This repository contains three machine learning projects completed as part of the CodSoft Machine Learning Internship (December Batch).
+The projects focus on classical machine learning fundamentals, correct problem formulation, and appropriate evaluation metrics using Python and scikit-learn.
+The objective is learning and clarity of implementation rather than production deployment.
 
+Repository Overview
+-Three independent ML tasks
+-Text and binary classification problems
+-Emphasis on data preprocessing and evaluation
+-Handling of imbalanced datasets
+-Clean, reproducible project structure
 
-🔍 Repository Highlights
-End-to-end Machine Learning pipelines
-Text classification and binary classification problems
-Focus on data preprocessing, feature engineering, and evaluation
-Imbalanced dataset handling with appropriate metrics
-Clean, modular, and reproducible GitHub-ready structure
-Implemented using Python, scikit-learn, pandas, NumPy
+Tasks Included
+Task 1 — Movie Genre Classification
+-Text classification using movie descriptions
+-Feature extraction with TF-IDF
+-Multi-class model evaluation
+-Folder: Task 1 - Movie Genre Classification/
 
+Task 2 — Credit Card Fraud Detection
+-Binary classification on highly imbalanced data
+-Focus on precision, recall, and false negatives
+-Evaluation beyond accuracy
+-Folder: Task_2_Credit_card_fraud_detection/
 
-🗂️ Internship Tasks & Projects
-
-🎬 Task 1 — Movie Genre Classification (NLP)
-Problem Type: Multi-class Text Classification
-Input: Movie plot descriptions
-Output: Predicted movie genre
-Key Techniques:
--Text preprocessing and cleaning
--Feature extraction (TF-IDF)
--Supervised ML classification
--Multi-class evaluation metrics
-📁 Folder: Task 1 - Movie Genre Classification/
-
-
-💳 Task 2 — Credit Card Fraud Detection (Imbalanced Data)
-Problem Type: Binary Classification
-Dataset Challenge: Highly imbalanced classes
-Key Techniques:
--Handling imbalanced datasets
--Precision-Recall trade-off analysis
--Confusion matrix interpretation
--False negative minimization
-📁 Folder: Task_2_Credit_card_fraud_detection/
-
-
-📩 Task 3 — SMS Spam Detection (NLP)
-Problem Type: Binary Text Classification
-Input: SMS messages
-Output: Spam / Ham prediction
-Key Techniques:
--NLP preprocessing
--TF-IDF vectorization
+Task 3 — SMS Spam Detection
+-Binary text classification
+-NLP preprocessing and TF-IDF
 -Model comparison and selection
--Performance evaluation
-📁 Folder: Task_3_SMS_Spam_Detection/
+-Folder: Task_3_SMS_Spam_Detection/
 
-
-⚖️ Case Study: Imbalanced Data in Fraud Detection
-Fraud detection datasets are extremely imbalanced, with fraudulent transactions forming a very small percentage of the data.
-
-📊 Class Distribution
-<p align="center"> <img src="class_distribution.png" width="600"> </p>
-
-Due to this imbalance, accuracy is not a reliable metric.
-The models are evaluated using precision, recall, F1-score, and confusion matrix.
-
-
-🤖 Machine Learning Models Used
-This repository intentionally focuses on classical, interpretable ML models:
+Models Used
 -Logistic Regression
 -Naive Bayes
 -Decision Trees
--Support Vector Machine (SVM)
+-Support Vector Machine
 -Random Forest (where applicable)
--Deep learning models are excluded to emphasize ML fundamentals.
 
-
-📈 Model Evaluation Metrics
-All models are evaluated using:
+Evaluation Metrics
 -Confusion Matrix
 -Precision
 -Recall
 -F1-Score
-Metrics are chosen based on problem type and data distribution.
+-Metrics are selected based on problem characteristics, especially for imbalanced datasets.
 
+Repository Structure
+CODSOFT/
+├── Task 1 - Movie Genre Classification/
+├── Task_2_Credit_card_fraud_detection/
+├── Task_3_SMS_Spam_Detection/
+├── README.md
 
-🏗️ Repository Structure
-CODSOFT/       
-│         
-├── Task 1 - Movie Genre Classification/   
-├── Task_2_Credit_card_fraud_detection/   
-├── Task_3_SMS_Spam_Detection/    
-├── README.md       
+Tools and Libraries
+-Python, NumPy, Pandas, scikit-learn, Matplotlib
 
+Internship Outcome
+-This internship provided hands-on experience in:
+-End-to-end machine learning workflows
+-NLP-based classification tasks
 
-Each task directory contains its own README detailing
--Problem statement
--Dataset descriptio
--ML approach and methodology
--Model results and evaluation
+Model evaluation and comparison
 
-
-🛠️ Tools, Libraries & Tech Stack
--Python
--NumPy
--Pandas
--scikit-learn
--Matplotlib
-
-
-🎯 Internship Learning Outcomes
-Through this internship, I gained hands-on experience in:
-End-to-end Machine Learning workflows
-Natural Language Processing (NLP) for text classification
-Handling imbalanced datasets
-Selecting appropriate evaluation metrics
-Writing clean, modular, and reproducible ML code
-Maintaining industry-aligned GitHub repositories
-
-
-🏷️ Recommended GitHub Topics
-Add these topics to the repository for maximum visibility:
-machine-learning
-data-science
-python
-scikit-learn
-nlp
-text-classification
-spam-detection
-fraud-detection
-imbalanced-data
-classification
-codsoft
-internship-project
-
-
-⭐ Why This Repository Matters
-This repository demonstrates:
-Strong ML fundamentals
-Practical problem-solving skills
-
-Correct evaluation practices
-
-Clean and professional GitHub usage
-
-Ideal for ML Intern, Data Science Intern, and Entry-Level ML Engineer roles.
+Writing clean, well-documented ML code
