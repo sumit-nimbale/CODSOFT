@@ -1,7 +1,8 @@
-🧠 CodSoft Machine Learning Internship Projects (Python, scikit-learn, NLP)
+CodSoft Machine Learning Internship Projects (Python, scikit-learn, NLP)
 This repository contains three end-to-end Machine Learning projects completed as part of the CodSoft Machine Learning Internship (December Batch).
 The projects focus on classical machine learning, NLP-based classification, imbalanced data handling, and correct evaluation metrics using Python and scikit-learn.
 This repository is intended for learning, experimentation, and ML fundamentals, not production deployment.
+
 
 🔍 Repository Highlights
 End-to-end Machine Learning pipelines
@@ -10,6 +11,7 @@ Focus on data preprocessing, feature engineering, and evaluation
 Imbalanced dataset handling with appropriate metrics
 Clean, modular, and reproducible GitHub-ready structure
 Implemented using Python, scikit-learn, pandas, NumPy
+
 
 🗂️ Internship Tasks & Projects
 
@@ -24,6 +26,7 @@ Key Techniques:
 -Multi-class evaluation metrics
 📁 Folder: Task 1 - Movie Genre Classification/
 
+
 💳 Task 2 — Credit Card Fraud Detection (Imbalanced Data)
 Problem Type: Binary Classification
 Dataset Challenge: Highly imbalanced classes
@@ -33,6 +36,7 @@ Key Techniques:
 -Confusion matrix interpretation
 -False negative minimization
 📁 Folder: Task_2_Credit_card_fraud_detection/
+
 
 📩 Task 3 — SMS Spam Detection (NLP)
 Problem Type: Binary Text Classification
@@ -45,6 +49,7 @@ Key Techniques:
 -Performance evaluation
 📁 Folder: Task_3_SMS_Spam_Detection/
 
+
 ⚖️ Case Study: Imbalanced Data in Fraud Detection
 Fraud detection datasets are extremely imbalanced, with fraudulent transactions forming a very small percentage of the data.
 
@@ -53,6 +58,7 @@ Fraud detection datasets are extremely imbalanced, with fraudulent transactions 
 
 Due to this imbalance, accuracy is not a reliable metric.
 The models are evaluated using precision, recall, F1-score, and confusion matrix.
+
 
 🤖 Machine Learning Models Used
 This repository intentionally focuses on classical, interpretable ML models:
@@ -63,6 +69,7 @@ This repository intentionally focuses on classical, interpretable ML models:
 -Random Forest (where applicable)
 -Deep learning models are excluded to emphasize ML fundamentals.
 
+
 📈 Model Evaluation Metrics
 All models are evaluated using:
 -Confusion Matrix
@@ -70,6 +77,7 @@ All models are evaluated using:
 -Recall
 -F1-Score
 Metrics are chosen based on problem type and data distribution.
+
 
 🏗️ Repository Structure
 CODSOFT/       
@@ -86,12 +94,14 @@ Each task directory contains its own README detailing
 -ML approach and methodology
 -Model results and evaluation
 
+
 🛠️ Tools, Libraries & Tech Stack
 -Python
 -NumPy
 -Pandas
 -scikit-learn
 -Matplotlib
+
 
 🎯 Internship Learning Outcomes
 Through this internship, I gained hands-on experience in:
@@ -101,6 +111,7 @@ Handling imbalanced datasets
 Selecting appropriate evaluation metrics
 Writing clean, modular, and reproducible ML code
 Maintaining industry-aligned GitHub repositories
+
 
 🏷️ Recommended GitHub Topics
 Add these topics to the repository for maximum visibility:
@@ -116,6 +127,7 @@ imbalanced-data
 classification
 codsoft
 internship-project
+
 
 ⭐ Why This Repository Matters
 This repository demonstrates:
