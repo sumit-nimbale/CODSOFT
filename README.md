@@ -1,4 +1,4 @@
-CodSoft Machine Learning Internship Projects         
+## CodSoft Machine Learning Internship Projects         
 
 -This repository contains three machine learning projects completed as part of the CodSoft Machine Learning Internship    (December Batch).
 
