@@ -1,4 +1,5 @@
-CodSoft Machine Learning Internship Projects                                    
+CodSoft Machine Learning Internship Projects         
+
 -This repository contains three machine learning projects completed as part of the CodSoft Machine Learning Internship    (December Batch).
 
 -The projects focus on classical machine learning fundamentals, correct problem formulation, and appropriate evaluation   metrics using Python and scikit-learn.
